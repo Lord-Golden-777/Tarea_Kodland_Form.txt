@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado del formulario</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>¡Gracias por completar el formulario!</h1>
+  </header>
+
+  <main>
+    <h2>Datos enviados:</h2>
+    
+    <p><strong>Nombre y Apellidos:</strong> {{ nombre }}</p>
+    <p><strong>Correo Electrónico:</strong> {{ email }}</p>
+    <p><strong>Dirección:</strong> {{ direccion }}</p>
+    <p><strong>Teléfono:</strong> {{ telefono }}</p>
+    <p><strong>Mensaje:</strong> {{ mensaje }}</p>
+
+    <p>¡Gracias por enviarnos tus datos! Nos pondremos en contacto contigo pronto.</p>
+  </main>
+
+  <footer>
+    <p>© 2025 Calculadora de Eficiencia Energética</p>
+  </footer>
+</body>
+</html>
